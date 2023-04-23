@@ -1,0 +1,13 @@
+fizz = int(input())
+buzz = int(input())
+N = int(input())
+for i in range(1, N+1):
+    if i % fizz:
+        if i % buzz:
+            print(i, end=' ')
+        else:
+            print("B", end=' ')
+    elif i % buzz:
+        print("F", end=' ')
+    else:
+        print("FB", end=' ')
